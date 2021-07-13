@@ -20,7 +20,7 @@ const config = require('./site.config');
 // Copy static files
 const staticCopy = new TransferWebpackPlugin([{
   from: 'static',
-  to: '../dist'
+  to: '../dist/static'
 }], path.join(config.root, config.paths.src))
 
 
