@@ -25,7 +25,17 @@
     "build:dist": "cross-env NODE_ENV=production webpack --config config/webpack.config.js",
     "deploy": "node config/site.deploy.js"
   },
-  "devDependencies": {
+  "dependencies": {
+    "chalk": "^2.4.2",
+    "clear": "^0.1.0",
+    "enquirer": "^2.3.6",
+    "figlet": "^1.2.3",
+    "ftp-deploy": "^2.4.1",
+    "jquery": "^3.6.0",
+    "normalize.css": "^8.0.1",
+    "reset-css": "^5.0.1",
+    "sanitize.css": "^12.0.0",
+    "webpack-dev-server": "^3.11.2",
     "@babel/cli": "^7.5.5",
     "@babel/core": "^7.5.5",
     "@babel/preset-env": "^7.5.5",
@@ -65,17 +75,5 @@
     "webpack-cli": "^3.3.6",
     "webpack-merge": "^4.2.1",
     "webpackbar": "^4.0.0"
-  },
-  "dependencies": {
-    "chalk": "^2.4.2",
-    "clear": "^0.1.0",
-    "enquirer": "^2.3.6",
-    "figlet": "^1.2.3",
-    "ftp-deploy": "^2.4.1",
-    "jquery": "^3.6.0",
-    "normalize.css": "^8.0.1",
-    "reset-css": "^5.0.1",
-    "sanitize.css": "^12.0.0",
-    "webpack-dev-server": "^3.11.2"
   }
 }

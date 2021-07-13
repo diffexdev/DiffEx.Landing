@@ -12,7 +12,7 @@
 
 [[redirects]]
   from = "/dashboard"
-  to = "dashboard.diffex.io"
+  to = "https://www.dashboard.diffex.io"
   status = 302
 
 [[redirects]]
