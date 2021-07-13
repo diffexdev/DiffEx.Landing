@@ -1,50 +1,92 @@
 // Load CSS Reset from NPM
 //@import "~sanitize.css";
 
+// Overrides
+body {
+  background: linear-gradient(261deg, rgba(19, 34, 79, 1) 0%, rgba(4, 44, 156, 1) 100%);
+}
+
+// Button Themes
+.btn {
+  background-size: 100%;
+  background-image: linear-gradient(90deg, rgb(111, 119, 208) 0%, rgb(142, 111, 208) 100%);
+  border: transparent;
+  position: relative;
+  z-index: 100;
+
+  &::before {
+    border-radius: inherit;
+    background-image: linear-gradient(0deg, rgb(111, 119, 208) 0%, rgb(142, 111, 208) 100%);
+    content: '';
+    display: block;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    width: 100%;
+    z-index: -100;
+    transition: 300ms;
+  }
+
+  &:hover {
+    transform: scale(1.05);
+
+    &::before {
+      box-shadow: 12px 10px 40px -8px rgb(142, 111, 208), -10px 10px 40px -8px rgb(0, 111, 255), -10px -7px 40px -8px rgb(0, 111, 255);
+      opacity: 1;
+    }
+  }
+}
+
+.btn-primary {
+  color: whitesmoke;
+}
+
 // General
 .splash-logo {
-	width: 50%;
-	height: auto;
-	position: relative;
+  width: 50%;
+  height: auto;
+  position: relative;
 }
 
 // Sticky header
 .header-main {
-	width: 100%;
-	z-index: 100; 
-	position: fixed; 
-	top: 0;
-	transition: 300ms ease;
+  width: 100%;
+  z-index: 100;
+  position: fixed;
+  top: 0;
+  transition: 300ms ease;
 }
 
 .atTop {
-	padding-top: 4em;
-	transition: 300ms ease;
+  padding-top: 4em;
+  transition: 300ms ease;
 }
 
 .isSticky {
-	background-color: #121212;
-	transition: 300ms ease;
+  background-color: #121212;
+  transition: 300ms ease;
 }
 
 // Custom Scrollbar
 ::-webkit-scrollbar {
-    width: 20px;
+  width: 20px;
 }
 
 ::-webkit-scrollbar-track {
-    background-color: transparent;
+  background-color: transparent;
 }
 
 ::-webkit-scrollbar-thumb {
-    background-color: lightgray;
-    border-radius: 20px;
-    border: 7px solid transparent;
-    background-clip: content-box;
+  background-color: lightgray;
+  border-radius: 20px;
+  border: 7px solid transparent;
+  background-clip: content-box;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background-color: #a8bbbf;
+  background-color: #a8bbbf;
 }
 
 // Animations
@@ -57,9 +99,11 @@
   0% {
     transform: scale(1, 1);
   }
+
   50% {
     transform: scale(1.3, 1.3);
   }
+
   100% {
     transform: scale(1, 1);
   }
