@@ -13,8 +13,16 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const OptimizeCssAssetsPlugin = require('optimize-css-assets-webpack-plugin');
 const RobotstxtPlugin = require('robotstxt-webpack-plugin');
 const SitemapPlugin = require('sitemap-webpack-plugin').default;
+var TransferWebpackPlugin = require('transfer-webpack-plugin');
 
 const config = require('./site.config');
+
+// Copy static files
+const staticCopy = new TransferWebpackPlugin([{
+  from: 'static',
+  to: '../dist'
+}], path.join(config.root, config.paths.src))
+
 
 // Hot module replacement
 const hmr = new webpack.HotModuleReplacementPlugin();
@@ -140,5 +148,6 @@ module.exports = [
   config.env === 'production' && sitemap,
   config.googleAnalyticsUA && google,
   webpackBar,
+  staticCopy,
   config.env === 'development' && hmr,
 ].filter(Boolean);
