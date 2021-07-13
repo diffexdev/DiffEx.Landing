@@ -6,13 +6,18 @@
 
 # Site Redirects #
 [[redirects]]
-  from = "/*"
-  to = "/404.html"
-  status = 404
-  force = true
-
-[[redirects]]
   from = "/"
   to = "/index.html"
   status = 200
-  force = true
+
+[[redirects]]
+  from = "/dashboard"
+  to = "dashboard.diffex.io"
+  status = 302
+
+[[redirects]]
+  from = "/*"
+  to = "/404.html"
+  status = 404
+
+
