@@ -1,0 +1,18 @@
+# Build Instructions #
+[build]
+  NODE_ENV = "production"
+  publish = "dist/"
+  command = "npm run build:dist"
+
+# Site Redirects #
+[[redirects]]
+  from = "/*"
+  to = "/404.html"
+  status = 404
+  force = true
+
+[[redirects]]
+  from = "/"
+  to = "/index.html"
+  status = 200
+  force = true
