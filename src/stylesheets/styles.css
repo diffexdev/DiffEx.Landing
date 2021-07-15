@@ -7,7 +7,7 @@ body {
   border: transparent;
   position: relative;
   z-index: 100; }
-  .btn:before {
+  .btn::before {
     border-radius: inherit;
     background-image: linear-gradient(0deg, #6f77d0 0%, #8e6fd0 100%);
     content: '';
@@ -21,18 +21,38 @@ body {
     z-index: -100;
     transition: 300ms; }
   .btn:hover {
-    transform: scale(1.05); }
-    .btn:hover:before {
+    transform: scale(1.05);
+    color: whitesmoke; }
+    .btn:hover::before {
       box-shadow: 12px 10px 40px -8px #8e6fd0, -10px 10px 40px -8px #006fff, -10px -7px 40px -8px #006fff;
       opacity: 1; }
 
 .btn-primary {
   color: whitesmoke; }
 
+.btn-primary:focus {
+  color: whitesmoke; }
+
 .splash-logo {
   width: 50%;
   height: auto;
   position: relative; }
+
+.not-visable {
+  opacity: 0; }
+
+#raid:hover {
+  background-image: linear-gradient(90deg, #6f77d0 0%, #8e6fd0 100%);
+  transform: scale(1.2); }
+
+#raid:not(:hover) {
+  background-image: linear-gradient(90deg, #6f77d0 0%, #8e6fd0 100%); }
+
+#raid:hover em {
+  color: white; }
+
+#raid:not(:hover) em {
+  color: white; }
 
 .header-main {
   width: 100%;
