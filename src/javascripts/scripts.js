@@ -6,10 +6,13 @@ window.$ = $;
 // Sticky header transition
 const $nav = $('.header-main');
 const $navImage = $('.navbar-image');
+const $headerMenu = $('.header-menu');
 $nav.toggleClass('atTop');
+$headerMenu.toggleClass('menuAtTop');
 
 $(() => {
   $(document).scroll(function () {
+	$headerMenu.toggleClass('menuAtTop', $(this).scrollTop() < $nav.height());
     $navImage.toggleClass('not-visable', $(this).scrollTop() < $nav.height());
     $nav.toggleClass('isSticky', $(this).scrollTop() > $nav.height());
     $nav.toggleClass('atTop', $(this).scrollTop() < $nav.height());
@@ -28,7 +31,7 @@ $('.tile')
   })
   .on('mouseout', function () {
     $(this).children('.photo').css({
-      transform: 'scale(1)', 'background-color': 'transparent', 'z-index': '100', 'border-radius': '20px',
+      transform: 'scale(1)', 'background-color': 'transparent', 'z-index': '0', 'border-radius': '20px',
     });
   })
   .on('mousemove', function (e) {
