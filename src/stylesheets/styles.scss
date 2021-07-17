@@ -1,51 +1,12 @@
 // Load CSS Reset from NPM
 //@import "~sanitize.css";
+@import "./paging-arrow.scss";
+@import "./dynamic-image.scss";
+@import "./theme.scss";
 
 // Overrides
 body {
   background: linear-gradient(261deg, rgba(19, 34, 79, 1) 0%, rgba(4, 44, 156, 1) 100%);
-}
-
-// Button Themes
-.btn {
-  background-size: 100%;
-  background-image: linear-gradient(90deg, rgb(111, 119, 208) 0%, rgb(142, 111, 208) 100%);
-  border: transparent;
-  position: relative;
-  z-index: 100;
-
-  &::before {
-    border-radius: inherit;
-    background-image: linear-gradient(0deg, rgb(111, 119, 208) 0%, rgb(142, 111, 208) 100%);
-    content: '';
-    display: block;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    opacity: 0;
-    width: 100%;
-    z-index: -100;
-    transition: 300ms;
-  }
-
-  &:hover {
-    transform: scale(1.05);
-    color: whitesmoke;
-
-    &::before {
-      box-shadow: 12px 10px 40px -8px rgb(142, 111, 208), -10px 10px 40px -8px rgb(0, 111, 255), -10px -7px 40px -8px rgb(0, 111, 255);
-      opacity: 1;
-    }
-  }
-}
-
-.btn-primary {
-  color: whitesmoke;
-}
-
-.btn-primary:focus {
-  color: whitesmoke;
 }
 
 // General
@@ -71,7 +32,6 @@ body {
 #raid:not(:hover) {
   background-image: linear-gradient(90deg, rgb(111, 119, 208) 0%, rgb(142, 111, 208) 100%);
 }
-
 
 #raid:hover em {
   color: white;
@@ -138,4 +98,25 @@ body {
   100% {
     transform: scale(1, 1);
   }
+}
+
+// DEBUG STYLES //
+.debug-red {
+  border: solid 5px red;
+}
+
+.debug-orange {
+  border: solid 5px orange;
+}
+
+.debug-purple {
+  border: solid 5px purple;
+}
+
+.debug-green {
+  border: solid 5px green;
+}
+
+.debug-blue {
+  border: solid 5px #8168ff;
 }
