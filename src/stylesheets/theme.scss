@@ -2,6 +2,11 @@
   font-family: system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol !important;
 }
 
+// .section {
+//   padding: 0;
+//   margin: 8em 0 8em 0;
+// }
+
 // Button Themes
 .btn {
   background-size: 100%;
@@ -42,4 +47,8 @@
 
 .btn-primary:focus {
   color: whitesmoke;
+}
+
+.nk-block-contact-s1 {
+  background: transparent;
 }
