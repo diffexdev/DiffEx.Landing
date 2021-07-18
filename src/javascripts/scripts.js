@@ -12,7 +12,7 @@ $headerMenu.toggleClass('menuAtTop');
 
 $(() => {
   $(document).scroll(function () {
-	$headerMenu.toggleClass('menuAtTop', $(this).scrollTop() < $nav.height());
+    $headerMenu.toggleClass('menuAtTop', $(this).scrollTop() < $nav.height());
     $navImage.toggleClass('not-visable', $(this).scrollTop() < $nav.height());
     $nav.toggleClass('isSticky', $(this).scrollTop() > $nav.height());
     $nav.toggleClass('atTop', $(this).scrollTop() < $nav.height());
