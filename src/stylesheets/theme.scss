@@ -52,3 +52,92 @@
 .nk-block-contact-s1 {
   background: transparent;
 }
+
+.countdown-text {
+	color: white !important;
+}
+
+.countdown-time {
+	background: transparent !important;
+}
+
+.tc-light .list-check-s3 li:before {
+    background-image: linear-gradient(0deg, rgb(111, 119, 208) 0%, rgb(142, 111, 208) 100%);
+	color: white;
+}
+
+.roadmap-s3-1.roadmap-done .roadmap-time-s3:before {
+    background-image: linear-gradient(0deg, rgb(111, 119, 208) 0%, rgb(142, 111, 208) 100%);
+	opacity: 0.5;
+}
+
+.roadmap-s3-1.roadmap-done .roadmap-time-s3:after {
+    background-image: linear-gradient(0deg, rgb(111, 119, 208) 0%, rgb(142, 111, 208) 100%);
+}
+
+.owl-dot {
+    background: #00015F !important;
+    width: 10px;
+}
+
+.owl-dot.active {
+    background: #3A00FF !important;
+    width: 20px;
+}
+
+.tc-light .tab-nav-btn-bdr li a:hover, .tc-light .tab-nav-btn-bdr li a {
+    outline: 0 none;
+    transition: all .5s;
+    background: transparent !important;
+}
+
+.tc-light .tab-nav-btn-bdr li a:hover, .tc-light .tab-nav-btn-bdr li a.active {
+    color: #fff !important;
+    background-image: linear-gradient(0deg, rgb(111, 119, 208) 0%, rgb(142, 111, 208) 100%) !important;
+    border-color: transparent !important;
+	
+	transition: 0.5s;
+	
+	  &::before {
+    border-radius: inherit;
+    background-image: linear-gradient(0deg, rgb(111, 119, 208) 0%, rgb(142, 111, 208) 100%);
+    content: '';
+    display: block;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    width: 100%;
+    z-index: -100;
+    transition: 300ms;
+  }
+
+  &:hover {
+    transform: scale(1.05);
+    color: whitesmoke;
+
+    &::before {
+      box-shadow: 12px 10px 40px -8px rgb(142, 111, 208), -10px 10px 40px -8px rgb(0, 111, 255), -10px -7px 40px -8px rgb(0, 111, 255);
+      opacity: 1;
+    }
+  }
+}
+
+.tc-light .accordion-title {
+    color: white;
+}
+
+.tc-light .accordion-title.collapsed {
+    color: rgb(142, 111, 208);
+}
+
+.tc-light .accordion-title:hover {
+    color: white !important;
+}
+
+a:hover {
+    outline: 0 none;
+    transition: all .5s;
+    color: mediumpurple !important;
+}
