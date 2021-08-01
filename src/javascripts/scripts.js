@@ -1,5 +1,7 @@
 import $ from 'jquery';
 
+require('jquery-validation');
+
 window.jQuery = $;
 window.$ = $;
 
@@ -9,6 +11,8 @@ const $navImage = $('.navbar-image');
 const $headerMenu = $('.header-menu');
 $nav.toggleClass('atTop');
 $headerMenu.toggleClass('menuAtTop');
+
+$('#submittedText').hide();
 
 let mobile = window.matchMedia('(min-width: 991px)');
 if (!mobile.matches) {
@@ -53,3 +57,12 @@ $('.tile')
       .append('<div class="photo"></div>')
       .children('.photo').css({ 'background-image': `url(${$(this).attr('data-image')})` });
   });
+
+// Handle form submit
+$('#contactForm').validate({
+  submitHandler() {
+    $('#contactForm').hide();
+    $('#notSubmittedText').hide();
+    $('#submittedText').show();
+  },
+});
