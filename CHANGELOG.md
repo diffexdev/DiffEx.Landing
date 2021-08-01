@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.4](https://github.com/Diff-Ex/DiffEx.Landing/compare/v0.0.3...v0.0.4) (2021-08-01)
+
+
+### Features
+
+* added recaptcha ([bba3763](https://github.com/Diff-Ex/DiffEx.Landing/commit/bba3763dd2dc46ba050ac665e7ac2fc436cd21d9))
+
+
+### Bug Fixes
+
+* removed contact form once submitted ([950ac80](https://github.com/Diff-Ex/DiffEx.Landing/commit/950ac807af6299b1d437d353fae4a0cb43ad18c1))
+
 ### [0.0.3](https://github.com/Diff-Ex/DiffEx.Landing/compare/v0.0.2...v0.0.3) (2021-08-01)
 
 
