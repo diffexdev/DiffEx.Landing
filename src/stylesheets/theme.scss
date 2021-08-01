@@ -54,51 +54,52 @@
 }
 
 .countdown-text {
-	color: white !important;
+  color: white !important;
 }
 
 .countdown-time {
-	background: transparent !important;
+  background: transparent !important;
 }
 
-.tc-light .list-check-s3 li:before {
-    background-image: linear-gradient(0deg, rgb(111, 119, 208) 0%, rgb(142, 111, 208) 100%);
-	color: white;
+.tc-light .list-check-s3 li::before {
+  background-image: linear-gradient(0deg, rgb(111, 119, 208) 0%, rgb(142, 111, 208) 100%);
+  color: white;
 }
 
-.roadmap-s3-1.roadmap-done .roadmap-time-s3:before {
-    background-image: linear-gradient(0deg, rgb(111, 119, 208) 0%, rgb(142, 111, 208) 100%);
-	opacity: 0.5;
+.roadmap-s3-1.roadmap-done .roadmap-time-s3::before {
+  background-image: linear-gradient(0deg, rgb(111, 119, 208) 0%, rgb(142, 111, 208) 100%);
+  opacity: 0.5;
 }
 
-.roadmap-s3-1.roadmap-done .roadmap-time-s3:after {
-    background-image: linear-gradient(0deg, rgb(111, 119, 208) 0%, rgb(142, 111, 208) 100%);
+.roadmap-s3-1.roadmap-done .roadmap-time-s3::after {
+  background-image: linear-gradient(0deg, rgb(111, 119, 208) 0%, rgb(142, 111, 208) 100%);
 }
 
 .owl-dot {
-    background: #00015F !important;
-    width: 10px;
+  background: #00015f !important;
+  width: 10px;
 }
 
 .owl-dot.active {
-    background: #3A00FF !important;
-    width: 20px;
+  background: #3a00ff !important;
+  width: 20px;
 }
 
-.tc-light .tab-nav-btn-bdr li a:hover, .tc-light .tab-nav-btn-bdr li a {
-    outline: 0 none;
-    transition: all .5s;
-    background: transparent !important;
+.tc-light .tab-nav-btn-bdr li a:hover,
+.tc-light .tab-nav-btn-bdr li a {
+  outline: 0 none;
+  transition: all 0.5s;
+  background: transparent !important;
 }
 
-.tc-light .tab-nav-btn-bdr li a:hover, .tc-light .tab-nav-btn-bdr li a.active {
-    color: #fff !important;
-    background-image: linear-gradient(0deg, rgb(111, 119, 208) 0%, rgb(142, 111, 208) 100%) !important;
-    border-color: transparent !important;
-	
-	transition: 0.5s;
-	
-	  &::before {
+.tc-light .tab-nav-btn-bdr li a:hover,
+.tc-light .tab-nav-btn-bdr li a.active {
+  color: #fff !important;
+  background-image: linear-gradient(0deg, rgb(111, 119, 208) 0%, rgb(142, 111, 208) 100%) !important;
+  border-color: transparent !important;
+  transition: 0.5s;
+
+  &::before {
     border-radius: inherit;
     background-image: linear-gradient(0deg, rgb(111, 119, 208) 0%, rgb(142, 111, 208) 100%);
     content: '';
@@ -125,19 +126,19 @@
 }
 
 .tc-light .accordion-title {
-    color: white;
+  color: white;
 }
 
 .tc-light .accordion-title.collapsed {
-    color: rgb(142, 111, 208);
+  color: rgb(142, 111, 208);
 }
 
 .tc-light .accordion-title:hover {
-    color: white !important;
+  color: white !important;
 }
 
 a:hover {
-    outline: 0 none;
-    transition: all .5s;
-    color: mediumpurple !important;
+  outline: 0 none;
+  transition: all 0.5s;
+  color: mediumpurple !important;
 }

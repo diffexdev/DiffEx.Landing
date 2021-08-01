@@ -10,12 +10,21 @@ const $headerMenu = $('.header-menu');
 $nav.toggleClass('atTop');
 $headerMenu.toggleClass('menuAtTop');
 
+let mobile = window.matchMedia('(min-width: 991px)');
+if (!mobile.matches) {
+  $nav.toggleClass('atTop');
+  $headerMenu.toggleClass('menuAtTop');
+}
+
 $(() => {
   $(document).scroll(function () {
-    $headerMenu.toggleClass('menuAtTop', $(this).scrollTop() < $nav.height());
-    $navImage.toggleClass('not-visable', $(this).scrollTop() < $nav.height());
-    $nav.toggleClass('isSticky', $(this).scrollTop() > $nav.height());
-    $nav.toggleClass('atTop', $(this).scrollTop() < $nav.height());
+    mobile = window.matchMedia('(min-width: 991px)');
+    if (mobile.matches) {
+      $nav.toggleClass('atTop', $(this).scrollTop() < $nav.height());
+      $headerMenu.toggleClass('menuAtTop', $(this).scrollTop() < $nav.height());
+      $navImage.toggleClass('not-visable', $(this).scrollTop() < $nav.height());
+      $nav.toggleClass('isSticky', $(this).scrollTop() > $nav.height());
+    }
   });
 });
 
