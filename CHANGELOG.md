@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.5](https://github.com/Diff-Ex/DiffEx.Landing/compare/v0.0.4...v0.0.5) (2021-08-01)
+
+
+### Features
+
+* updated readme and captcha ([07e9f0c](https://github.com/Diff-Ex/DiffEx.Landing/commit/07e9f0c1ae5be8f0260f93b686f5429bd76c9651))
+
 ### [0.0.4](https://github.com/Diff-Ex/DiffEx.Landing/compare/v0.0.3...v0.0.4) (2021-08-01)
 
 
