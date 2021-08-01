@@ -2,6 +2,15 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.2](https://github.com/Diff-Ex/DiffEx.Landing/compare/v0.0.1...v0.0.2) (2021-08-01)
+
+
+### Bug Fixes
+
+* removed hotfix files, various mobile fixes ([a504650](https://github.com/Diff-Ex/DiffEx.Landing/commit/a504650948f40673980b9a4589626eb5a95131cf))
+* update dashboard url ([468662e](https://github.com/Diff-Ex/DiffEx.Landing/commit/468662e9ca3b54e2b876195f38a5e4d1b56a8d04))
+* updated favicon ([b8d90ce](https://github.com/Diff-Ex/DiffEx.Landing/commit/b8d90ce04c2f81a48a8eb8c4bb81423af3bfc644))
+
 ### 0.0.1 (2021-08-01)
 
 
