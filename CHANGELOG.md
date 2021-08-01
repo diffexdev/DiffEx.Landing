@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.3](https://github.com/Diff-Ex/DiffEx.Landing/compare/v0.0.2...v0.0.3) (2021-08-01)
+
+
+### Bug Fixes
+
+* more mobile header fixes + about anchor fixes ([2fdf596](https://github.com/Diff-Ex/DiffEx.Landing/commit/2fdf5968292999b0e8ee3ea91b8d9294282b13ba))
+
 ### [0.0.2](https://github.com/Diff-Ex/DiffEx.Landing/compare/v0.0.1...v0.0.2) (2021-08-01)
 
 
