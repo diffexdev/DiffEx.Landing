@@ -35,3 +35,7 @@ Desktop.ini
 $RECYCLE.BIN/
 
 .idea/
+
+src/stylesheets/styles.css
+
+src/stylesheets/theme.css
