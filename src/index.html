@@ -463,7 +463,7 @@
                     </p>
                   </div>
 
-                  <form class="nk-form-submit" namne="contact" method="POST" data-netlify="true" data-netlify-honeypot="bot-field" id="contactForm">
+                  <form class="nk-form-submit" namne="contact" method="POST" data-netlify="true" data-netlify-recaptcha="true" id="contactForm">
                     <div class="row">
                       <div class="col-sm-6">
                         <div class="field-item animated" data-animate="fadeInUp" data-delay="0.8">
@@ -491,13 +491,12 @@
                           class="input-bordered input-textarea required"></textarea>
                       </div>
                     </div>
-                    <input type="text" class="d-none" name="form-anti-honeypot" value="">
                     <div class="row">
+                      <div class="col-sm-5 animated" data-animate="fadeInUp" data-delay="1.1">
+                        <div data-netlify-recaptcha="true"></div>
+                      </div>
                       <div class="col-sm-5 text-right animated" data-animate="fadeInUp" data-delay="1.1">
                         <button type="submit" class="btn btn-round">SEND</button>
-                      </div>
-                      <div class="col-sm-7 order-sm-first">
-                        <div class="form-results"></div>
                       </div>
                     </div>
                   </form>
