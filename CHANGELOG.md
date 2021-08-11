@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.6](https://github.com/Diff-Ex/DiffEx.Landing/compare/v0.0.5...v0.0.6) (2021-08-11)
+
+
+### Features
+
+* added content ([7729878](https://github.com/Diff-Ex/DiffEx.Landing/commit/7729878a3750bcdc85c6df7fd8aaf4d530114964))
+* added content, changed tokenomics ([09b1832](https://github.com/Diff-Ex/DiffEx.Landing/commit/09b1832084a4b416b8d6ae96708c07b5dd538dc9))
+
 ### [0.0.5](https://github.com/Diff-Ex/DiffEx.Landing/compare/v0.0.4...v0.0.5) (2021-08-01)
 
 
