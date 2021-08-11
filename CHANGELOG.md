@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.7](https://github.com/Diff-Ex/DiffEx.Landing/compare/v0.0.6...v0.0.7) (2021-08-11)
+
+
+### Features
+
+* quick new 404 page ([1dc89c2](https://github.com/Diff-Ex/DiffEx.Landing/commit/1dc89c25c771f890fada2a61fcfd115cc7e5db09))
+
 ### [0.0.6](https://github.com/Diff-Ex/DiffEx.Landing/compare/v0.0.5...v0.0.6) (2021-08-11)
 
 
