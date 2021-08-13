@@ -13,7 +13,7 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const OptimizeCssAssetsPlugin = require('optimize-css-assets-webpack-plugin');
 const RobotstxtPlugin = require('robotstxt-webpack-plugin');
 const SitemapPlugin = require('sitemap-webpack-plugin').default;
-var TransferWebpackPlugin = require('transfer-webpack-plugin');
+const TransferWebpackPlugin = require('transfer-webpack-plugin');
 
 const config = require('./site.config');
 
@@ -23,11 +23,10 @@ const staticCopy = new TransferWebpackPlugin([{
   to: '../dist/static'
 }], path.join(config.root, config.paths.src))
 
-const copyWhitepaper = new TransferWebpackPlugin([{
-  from: 'whitepaper.pdf',
+const pdfCopy = new TransferWebpackPlugin([{
+  from: 'pdfs',
   to: '../dist/'
 }], path.join(config.root, config.paths.src))
-
 
 // Hot module replacement
 const hmr = new webpack.HotModuleReplacementPlugin();
@@ -154,6 +153,6 @@ module.exports = [
   config.googleAnalyticsUA && google,
   webpackBar,
   staticCopy,
-  copyWhitepaper,
+  pdfCopy,
   config.env === 'development' && hmr,
 ].filter(Boolean);
