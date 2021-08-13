@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.8](https://github.com/Diff-Ex/DiffEx.Landing/compare/v0.0.7...v0.0.8) (2021-08-13)
+
+
+### Features
+
+* updated whitepaper ([ef2d1a5](https://github.com/Diff-Ex/DiffEx.Landing/commit/ef2d1a5f3b242d0d184f2c2bf8f91a997beb326c))
+
 ### [0.0.7](https://github.com/Diff-Ex/DiffEx.Landing/compare/v0.0.6...v0.0.7) (2021-08-11)
 
 
