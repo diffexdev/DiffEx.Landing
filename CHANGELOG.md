@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.9](https://github.com/Diff-Ex/DiffEx.Landing/compare/v0.0.8...v0.0.9) (2021-08-13)
+
+
+### Bug Fixes
+
+* image case naming, netlify publish fix ([e382439](https://github.com/Diff-Ex/DiffEx.Landing/commit/e382439f57c5fd5769f3527850d9be8cd71a3a9b))
+
 ### [0.0.8](https://github.com/Diff-Ex/DiffEx.Landing/compare/v0.0.7...v0.0.8) (2021-08-13)
 
 
