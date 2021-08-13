@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.10](https://github.com/Diff-Ex/DiffEx.Landing/compare/v0.0.9...v0.0.10) (2021-08-13)
+
+
+### Bug Fixes
+
+* lowercased image names ([e48c714](https://github.com/Diff-Ex/DiffEx.Landing/commit/e48c71493a9ac084ff3f5efab28f780e80b63960))
+
 ### [0.0.9](https://github.com/Diff-Ex/DiffEx.Landing/compare/v0.0.8...v0.0.9) (2021-08-13)
 
 
