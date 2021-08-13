@@ -23,6 +23,11 @@ const staticCopy = new TransferWebpackPlugin([{
   to: '../dist/static'
 }], path.join(config.root, config.paths.src))
 
+const copyWhitepaper = new TransferWebpackPlugin([{
+  from: 'whitepaper.pdf',
+  to: '../dist/'
+}], path.join(config.root, config.paths.src))
+
 
 // Hot module replacement
 const hmr = new webpack.HotModuleReplacementPlugin();
@@ -149,5 +154,6 @@ module.exports = [
   config.googleAnalyticsUA && google,
   webpackBar,
   staticCopy,
+  copyWhitepaper,
   config.env === 'development' && hmr,
 ].filter(Boolean);
