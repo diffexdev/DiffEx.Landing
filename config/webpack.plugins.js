@@ -24,9 +24,19 @@ const staticCopyJs = new TransferWebpackPlugin([{
   to: '../dist/static/js'
 }], path.join(config.root, config.paths.src))
 
+const staticCopyCss = new TransferWebpackPlugin([{
+  from: 'static/css/required',
+  to: '../dist/static/css'
+}], path.join(config.root, config.paths.src))
+
 const staticCopyPdf = new TransferWebpackPlugin([{
   from: 'static/pdfs',
   to: '../dist/'
+}], path.join(config.root, config.paths.src))
+
+const staticCopyFonts = new TransferWebpackPlugin([{
+  from: 'static/fonts',
+  to: '../dist/static/fonts'
 }], path.join(config.root, config.paths.src))
 //////////////////////
 
@@ -164,6 +174,8 @@ module.exports = [
   ///////////////////////////////////////////////////////////
   webpackBar,
   staticCopyJs,
+  staticCopyCss,
   staticCopyPdf,
+  staticCopyFonts,
   config.env === 'development' && hmr,
 ].filter(Boolean);
