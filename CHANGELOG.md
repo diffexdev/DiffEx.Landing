@@ -2,6 +2,22 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.1.0](https://github.com/Diff-Ex/DiffEx.Landing/compare/v0.0.15...v0.1.0) (2021-08-15)
+
+
+### ⚠ BREAKING CHANGES
+
+* SEO and performance optimization 
+
+### Features
+
+* SEO and performance optimization  ([050b2f5](https://github.com/Diff-Ex/DiffEx.Landing/commit/050b2f5ee5bbed3b5eb81e89d2c7fd5fccc89e02))
+
+
+### Bug Fixes
+
+* missing required css for accordion and carousel ([aed03fb](https://github.com/Diff-Ex/DiffEx.Landing/commit/aed03fb1349d927faf1050482fa65fd078fd1516))
+
 ### [0.0.15](https://github.com/Diff-Ex/DiffEx.Landing/compare/v0.0.14...v0.0.15) (2021-08-15)
 
 
