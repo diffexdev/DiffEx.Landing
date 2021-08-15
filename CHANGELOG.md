@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.15](https://github.com/Diff-Ex/DiffEx.Landing/compare/v0.0.14...v0.0.15) (2021-08-15)
+
+
+### Bug Fixes
+
+* updated presale start time on timeline ([dda7b22](https://github.com/Diff-Ex/DiffEx.Landing/commit/dda7b2239d82f824559155cc8d88769864510b5e))
+
 ### [0.0.14](https://github.com/Diff-Ex/DiffEx.Landing/compare/v0.0.13...v0.0.14) (2021-08-13)
 
 
