@@ -14,24 +14,33 @@ const OptimizeCssAssetsPlugin = require('optimize-css-assets-webpack-plugin');
 const RobotstxtPlugin = require('robotstxt-webpack-plugin');
 const SitemapPlugin = require('sitemap-webpack-plugin').default;
 const TransferWebpackPlugin = require('transfer-webpack-plugin');
+const PurgecssPlugin = require('purgecss-webpack-plugin')
 
 const config = require('./site.config');
 
-// Copy static files
-const staticCopy = new TransferWebpackPlugin([{
-  from: 'static',
-  to: '../dist/static'
+// STATIC FILE COPY //
+const staticCopyJs = new TransferWebpackPlugin([{
+  from: 'static/js',
+  to: '../dist/static/js'
 }], path.join(config.root, config.paths.src))
 
-const pdfCopy = new TransferWebpackPlugin([{
-  from: 'pdfs',
+const staticCopyCss = new TransferWebpackPlugin([{
+  from: 'static/css/required',
+  to: '../dist/static/css'
+}], path.join(config.root, config.paths.src))
+
+const staticCopyPdf = new TransferWebpackPlugin([{
+  from: 'static/pdfs',
   to: '../dist/'
 }], path.join(config.root, config.paths.src))
 
-// Hot module replacement
-const hmr = new webpack.HotModuleReplacementPlugin();
+const staticCopyFonts = new TransferWebpackPlugin([{
+  from: 'static/fonts',
+  to: '../dist/static/fonts'
+}], path.join(config.root, config.paths.src))
+//////////////////////
 
-// Optimize CSS assets
+// CSS CONDITIONING //
 const optimizeCss = new OptimizeCssAssetsPlugin({
   assetNameRegExp: /\.css$/g,
   cssProcessor: cssnano,
@@ -48,6 +57,18 @@ const optimizeCss = new OptimizeCssAssetsPlugin({
   canPrint: true,
 });
 
+const cssExtract = new MiniCssExtractPlugin({
+  filename: 'style.[contenthash].css',
+});
+
+const purgeCss = new PurgecssPlugin({
+  paths: glob.sync(`${config.paths.src}/**/*`,  { nodir: true }),
+})
+//////////////////////
+
+// Hot module replacement
+const hmr = new webpack.HotModuleReplacementPlugin();
+
 // Generate robots.txt
 const robots = new RobotstxtPlugin({
   sitemap: `${config.site_url}/sitemap.xml`,
@@ -59,11 +80,6 @@ const clean = new CleanWebpackPlugin();
 
 // Stylelint
 const stylelint = new StyleLintPlugin();
-
-// Extract CSS
-const cssExtract = new MiniCssExtractPlugin({
-  filename: 'style.[contenthash].css',
-});
 
 // HTML generation
 const paths = [];
@@ -116,30 +132,32 @@ const webpackBar = new WebpackBar({
   color: '#ff6469',
 });
 
+// UNUSED GOOGLE ANALYTICS CODE, BEING DIRECTLY INJECTED //
 // Google analytics
-const CODE = `<script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','//www.google-analytics.com/analytics.js','ga');ga('create','{{ID}}','auto');ga('send','pageview');</script>`;
+// const CODE = `<script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','//www.google-analytics.com/analytics.js','ga');ga('create','{{ID}}','auto');ga('send','pageview');</script>`;
 
-class GoogleAnalyticsPlugin {
-  constructor({ id }) {
-    this.id = id;
-  }
+// class GoogleAnalyticsPlugin {
+//   constructor({ id }) {
+//     this.id = id;
+//   }
 
-  apply(compiler) {
-    compiler.hooks.compilation.tap('GoogleAnalyticsPlugin', (compilation) => {
-      HTMLWebpackPlugin.getHooks(compilation).beforeEmit.tapAsync(
-        'GoogleAnalyticsPlugin',
-        (data, cb) => {
-          data.html = data.html.replace('</head>', `${CODE.replace('{{ID}}', this.id) }</head>`);
-          cb(null, data);
-        },
-      );
-    });
-  }
-}
+//   apply(compiler) {
+//     compiler.hooks.compilation.tap('GoogleAnalyticsPlugin', (compilation) => {
+//       HTMLWebpackPlugin.getHooks(compilation).beforeEmit.tapAsync(
+//         'GoogleAnalyticsPlugin',
+//         (data, cb) => {
+//           data.html = data.html.replace('</head>', `${CODE.replace('{{ID}}', this.id) }</head>`);
+//           cb(null, data);
+//         },
+//       );
+//     });
+//   }
+// }
 
-const google = new GoogleAnalyticsPlugin({
-  id: config.googleAnalyticsUA,
-});
+// const google = new GoogleAnalyticsPlugin({
+//   id: config.googleAnalyticsUA,
+// });
+///////////////////////////////////////////////////////////
 
 module.exports = [
   clean,
@@ -150,9 +168,14 @@ module.exports = [
   config.env === 'production' && optimizeCss,
   config.env === 'production' && robots,
   config.env === 'production' && sitemap,
-  config.googleAnalyticsUA && google,
+  config.env === 'production' && purgeCss,
+  // UNUSED GOOGLE ANALYTICS CODE, BEING DIRECTLY INJECTED //
+  // config.googleAnalyticsUA && google,
+  ///////////////////////////////////////////////////////////
   webpackBar,
-  staticCopy,
-  pdfCopy,
+  staticCopyJs,
+  staticCopyCss,
+  staticCopyPdf,
+  staticCopyFonts,
   config.env === 'development' && hmr,
 ].filter(Boolean);
