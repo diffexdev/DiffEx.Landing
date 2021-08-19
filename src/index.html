@@ -135,11 +135,11 @@
                   <div class="cpn-btns animated" data-animate="fadeInUp" data-delay="1.4">
                     <a class="btn btn-grad" href="#" data-toggle="modal" data-target="#price-chart">Presale Price
                       Chart</a>
-                    <a href="#" class="btn btn-grad" data-toggle="modal" data-target="#how-to-buy">Buy DFFX Tokens
+                    <a class="btn btn-grad" id="buyNow">Buy DFFX Tokens
                       Now</a>
                   </div>
                   <ul class="cpn-links animated" data-animate="fadeInUp" data-delay="1.5">
-                    <li><a class="link" href="#" data-toggle="modal" data-target="#how-to-buy"><em
+                    <li><a class="link" id="buyNow"><em
                           class="link-icon far fa-lightbulb"></em><span>How to Buy</span></a>
                     </li>
                     <li><a class="link" target="_blank" rel="noopener noreferrer" href="/whitepaper.pdf"><em
@@ -164,7 +164,7 @@
                       <div class="progress-point" data-point="100">Hard Cap <span>30 ETH</span></div>
                     </div>
                   </div>
-                  <a href="#" class="btn btn-grad" data-toggle="modal" data-target="#how-to-buy">Buy DFFX Tokens Now</a>
+                  <a class="btn btn-grad" id="buyNow">Buy DFFX Tokens Now</a>
                   <span class="token-min">Minimum Purchase: 0.025 ETH</span>
                 </div>
               </div>
@@ -276,7 +276,7 @@
                 </div>
                 <div class="cpn-action">
                   <div class="cpn-btns animated" data-animate="fadeInUp" data-delay="1.4">
-                    <a class="btn btn-grad" href="#" data-toggle="modal" data-target="#how-to-buy">Buy DFFX Tokens
+                    <a class="btn btn-grad" id="buyNow">Buy DFFX Tokens
                       Now</a>
                   </div>
                 </div>
@@ -1034,13 +1034,14 @@
               style="display: flex; justify-content: center; align-items: center;">Copyright © 2021 DiffEx.</div>
           </div>
           <div class="col-lg-9 order-lg-last text-lg-right" style="display: flex; justify-content: flex-end;">
-            <ul class="footer-nav" style="display: flex; flex-wrap: wrap; justify-content: center; align-items: center;">
+            <ul class="footer-nav"
+              style="display: flex; flex-wrap: wrap; justify-content: center; align-items: center;">
               <li><a href="/privacy_policy" id="footer_link">Privacy Policy</a></li>
               <li><a href="/terms_and_conditions" id="footer_link">Terms and Conditions</a></li>
               <li><a href="/cookie_policy" id="footer_link">Cookie Policy</a></li>
               <li><a id="footer_link" onclick="displayPreferenceModal()" type="button">
-                Cookie Preferences
-              </a></li>
+                  Cookie Preferences
+                </a></li>
             </ul>
           </div>
         </div>
@@ -1065,9 +1066,11 @@
       </div>
     </div>
   </div>
+  <a href="#" class="btn btn-grad" data-toggle="modal" data-target="#how-to-buy" id="how-to-buy-button"
+    style="opacity: 0; display: none;"></a>
 
   <!-- SEC Compliant MODAL -->
-  <div class="modal show" id="sec-compliance" data-backdrop="static" data-keyboard="false">
+  <div class="modal show" id="sec-compliance">
     <div class="modal-dialog modal-dialog-centered">
       <div class="modal-content">
         <div class="modal-body p-md-4 p-lg-5" style="text-align: center;">
