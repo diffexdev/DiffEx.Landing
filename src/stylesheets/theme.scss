@@ -1,15 +1,6 @@
 .title {
-  font-family:
-    system-ui,
-    -apple-system,
-    BlinkMacSystemFont,
-    Segoe UI,
-    Roboto,
-    Helvetica,
-    Arial,
-    sans-serif,
-    Apple Color Emoji,
-    Segoe UI Emoji,
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
+    Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji,
     Segoe UI Symbol !important;
 }
 
@@ -21,24 +12,22 @@
 // Button Themes
 .btn {
   background-size: 100%;
-  background-image:
-    linear-gradient(
-      90deg,
-      rgb(111, 119, 208) 0%,
-      rgb(142, 111, 208) 100%
-    );
+  background-image: linear-gradient(
+    90deg,
+    rgb(111, 119, 208) 0%,
+    rgb(142, 111, 208) 100%
+  );
   border: transparent;
   position: relative;
   z-index: 100;
 
   &::before {
     border-radius: inherit;
-    background-image:
-      linear-gradient(
-        0deg,
-        rgb(111, 119, 208) 0%,
-        rgb(142, 111, 208) 100%
-      );
+    background-image: linear-gradient(
+      0deg,
+      rgb(111, 119, 208) 0%,
+      rgb(142, 111, 208) 100%
+    );
     content: "";
     display: block;
     height: 100%;
@@ -56,8 +45,7 @@
     color: whitesmoke;
 
     &::before {
-      box-shadow:
-        12px 10px 40px -8px rgb(142, 111, 208),
+      box-shadow: 12px 10px 40px -8px rgb(142, 111, 208),
         -10px 10px 40px -8px rgb(0, 111, 255),
         -10px -7px 40px -8px rgb(0, 111, 255);
       opacity: 1;
@@ -91,32 +79,29 @@
 }
 
 .tc-light .list-check-s3 li::before {
-  background-image:
-    linear-gradient(
-      0deg,
-      rgb(111, 119, 208) 0%,
-      rgb(142, 111, 208) 100%
-    );
+  background-image: linear-gradient(
+    0deg,
+    rgb(111, 119, 208) 0%,
+    rgb(142, 111, 208) 100%
+  );
   color: white;
 }
 
 .roadmap-s3-1.roadmap-done .roadmap-time-s3::before {
-  background-image:
-    linear-gradient(
-      0deg,
-      rgb(111, 119, 208) 0%,
-      rgb(142, 111, 208) 100%
-    );
+  background-image: linear-gradient(
+    0deg,
+    rgb(111, 119, 208) 0%,
+    rgb(142, 111, 208) 100%
+  );
   opacity: 0.5;
 }
 
 .roadmap-s3-1.roadmap-done .roadmap-time-s3::after {
-  background-image:
-    linear-gradient(
-      0deg,
-      rgb(111, 119, 208) 0%,
-      rgb(142, 111, 208) 100%
-    );
+  background-image: linear-gradient(
+    0deg,
+    rgb(111, 119, 208) 0%,
+    rgb(142, 111, 208) 100%
+  );
 }
 
 .owl-dot {
@@ -139,23 +124,21 @@
 .tc-light .tab-nav-btn-bdr li a:hover,
 .tc-light .tab-nav-btn-bdr li a.active {
   color: #fff !important;
-  background-image:
-    linear-gradient(
-      0deg,
-      rgb(111, 119, 208) 0%,
-      rgb(142, 111, 208) 100%
-    ) !important;
+  background-image: linear-gradient(
+    0deg,
+    rgb(111, 119, 208) 0%,
+    rgb(142, 111, 208) 100%
+  ) !important;
   border-color: transparent !important;
   transition: 0.5s;
 
   &::before {
     border-radius: inherit;
-    background-image:
-      linear-gradient(
-        0deg,
-        rgb(111, 119, 208) 0%,
-        rgb(142, 111, 208) 100%
-      );
+    background-image: linear-gradient(
+      0deg,
+      rgb(111, 119, 208) 0%,
+      rgb(142, 111, 208) 100%
+    );
     content: "";
     display: block;
     height: 100%;
@@ -173,8 +156,7 @@
     color: whitesmoke;
 
     &::before {
-      box-shadow:
-        12px 10px 40px -8px rgb(142, 111, 208),
+      box-shadow: 12px 10px 40px -8px rgb(142, 111, 208),
         -10px 10px 40px -8px rgb(0, 111, 255),
         -10px -7px 40px -8px rgb(0, 111, 255);
       opacity: 1;
@@ -213,12 +195,11 @@ a:hover {
 }
 
 .bg-theme-grad-s2 {
-  background-image:
-    linear-gradient(
-      0deg,
-      rgba(111, 119, 208, 0.3) 0%,
-      rgba(142, 111, 208, 0.3) 100%
-    ) !important;
+  background-image: linear-gradient(
+    0deg,
+    rgba(111, 119, 208, 0.3) 0%,
+    rgba(142, 111, 208, 0.3) 100%
+  ) !important;
 }
 
 .progress-point span {
@@ -234,12 +215,11 @@ a:hover {
 }
 
 .bg-grad {
-  background-image:
-    linear-gradient(
-      0deg,
-      rgb(111, 119, 208) 0%,
-      rgb(142, 111, 208) 100%
-    ) !important;
+  background-image: linear-gradient(
+    0deg,
+    rgb(111, 119, 208) 0%,
+    rgb(142, 111, 208) 100%
+  ) !important;
 }
 
 .token-status {
@@ -263,12 +243,11 @@ a:hover {
 }
 
 .modal-body {
-  background-image:
-    linear-gradient(
-      90deg,
-      rgb(111, 119, 208) 0%,
-      rgb(142, 111, 208) 100%
-    );
+  background-image: linear-gradient(
+    90deg,
+    rgb(111, 119, 208) 0%,
+    rgb(142, 111, 208) 100%
+  );
   color: white !important;
 }
 
@@ -318,12 +297,11 @@ a:hover {
 }
 
 .team-popup {
-  background-image:
-    linear-gradient(
-      90deg,
-      rgb(111, 119, 208) 0%,
-      rgb(142, 111, 208) 100%
-    );
+  background-image: linear-gradient(
+    90deg,
+    rgb(111, 119, 208) 0%,
+    rgb(142, 111, 208) 100%
+  );
 }
 
 p {
