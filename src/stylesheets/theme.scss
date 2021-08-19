@@ -195,3 +195,15 @@ a:hover {
   background-image: linear-gradient(90deg, rgb(111, 119, 208) 0%, rgb(142, 111, 208) 100%);
   color: white !important;
 }
+
+.active>div>.chart-label {
+  color: mediumpurple;
+}
+
+.active>.chart-data-item:before, .active>.chart-data-item:after {
+  border-color: mediumpurple;
+}
+
+.active>div>span>.chart-percent {
+  color: mediumpurple;
+}
