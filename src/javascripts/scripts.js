@@ -88,7 +88,7 @@ $(() => {
 // Location Detection
 // Get current token sale data
 // $(() => {
-//   $.getJSON('https://api.db-ip.com/v2/free/self', (data) => {
+//   $.getJSON('https://api.db-ip.com/v2/pb6531b8e3bd6e5da1ac7779bc9147d873eddec5/self', (data) => {
 //     if (data.countryCode === 'US') $('#sec-compliance-button')[0].click();
 //   });
 // });
