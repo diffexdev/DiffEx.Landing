@@ -26,7 +26,7 @@
     "lint:styles": "stylelint \"src/stylesheets/*.scss\"",
     "lint:styles:fix": "stylelint --fix \"src/stylesheets/*.{css,scss,sass}\"",
     "purgecss": "purgecss --css src/static/css/nio.bundle.min.css --content dist/index.html --output dist/static/css ",
-    "prebuild:dist": "cross-env rimraf dist/* && npm install",
+    "prebuild:dist": "cross-env rimraf dist/* && npm install && npm run lint:fix",
     "build:dist": "cross-env NODE_ENV=production webpack --config config/webpack.config.js",
     "deploy": "node config/site.deploy.js"
   },
