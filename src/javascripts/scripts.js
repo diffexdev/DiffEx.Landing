@@ -74,7 +74,8 @@ $(() => {
     url: 'https://api.diffex.io/api/v1/ICO',
     dataType: 'json',
     success(result) {
-      const numberRaised = `Raised so far <span>${result} ETH</span>`;
+      const rounded = result.toFixed(4);
+      const numberRaised = `Raised so far: <span>${rounded} ETH</span>`;
       $('#icoRaised').html(numberRaised);
       $('#raisedProgress').html(`<div class='progress-percent bg-grad' style="width: ${(result / 30) * 100}%"></div>`);
     },
