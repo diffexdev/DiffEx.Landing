@@ -66,3 +66,20 @@ $('#contactForm').validate({
     $('#submittedText').show();
   },
 });
+
+// Get current token sale data
+$(() => {
+  $.ajax({
+    type: 'GET',
+    url: 'https://api.diffex.io/api/v1/ICO',
+    dataType: 'json',
+    success(result) {
+      const numberRaised = `Raised so far <span>${result} ETH</span>`;
+      $('#icoRaised').html(numberRaised);
+      $('#raisedProgress').html(`<div class='progress-percent bg-grad' style="width: ${(result / 30) * 100}%"></div>`);
+    },
+    error() {
+      // Do nothing
+    },
+  });
+});
