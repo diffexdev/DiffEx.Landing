@@ -84,3 +84,11 @@ $(() => {
     },
   });
 });
+
+// Location Detection
+// Get current token sale data
+// $(() => {
+//   $.getJSON('https://api.db-ip.com/v2/free/self', (data) => {
+//     if (data.countryCode === 'US') $('#sec-compliance-button')[0].click();
+//   });
+// });
