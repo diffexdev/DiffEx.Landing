@@ -28,7 +28,6 @@
     "purgecss": "purgecss --css src/static/css/nio.bundle.min.css --content dist/index.html --output dist/static/css ",
     "prebuild:dist": "cross-env rimraf dist/* && npm install",
     "build:dist": "cross-env NODE_ENV=production webpack --config config/webpack.config.js",
-    "postbuild:dist": "npm run purgecss",
     "deploy": "node config/site.deploy.js"
   },
   "dependencies": {
