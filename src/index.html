@@ -38,7 +38,8 @@
         </div>
       </div>
     </div>
-    <div class="banner banner-fs tc-light">
+
+    <div class="banner banner-fs tc-light" id="title">
       <div class="nk-block nk-block-header nk-block-sm my-auto">
         <div class="container"
           style="display: flex; flex-direction: column; justify-content: center; align-items: center;">
@@ -92,6 +93,7 @@
       </div>
       <div id="particles-bg" class="particles-container is-fixed particles-bg op-100 "></div>
     </div>
+
     <main class="nk-pages tc-light">
       <div class="row justify-content-center" style="position: relative; margin-top: 2em">
         <svg class="arrows">
@@ -102,7 +104,7 @@
       </div>
 
       <!-- Token Presale Details Section -->
-      <section class="section">
+      <section class="section" id="token-sale">
         <div class="container">
           <div class="row gutter-vr-30px align-items-center justify-content-center">
             <div class="col-lg-7 col-sm-10 text-center text-lg-left">
@@ -310,7 +312,7 @@
         </svg>
       </div>
 
-      <section class="section">
+      <section class="section" id="about">
         <div class="container">
           <div class="row justify-content-center">
             <div class="col-lg-8">
@@ -464,32 +466,39 @@
 
       <section class="section" id="team">
         <div class="container">
-          <div class="section-head section-head-s3 wide-auto-sm text-center">
-            <h6 class="title title-xs title-xs-s3 tc-primary animated" data-animate="fadeInUp" data-delay=".1">Our
-              Team</h6>
-            <h2 class="title animated" data-animate="fadeInUp" data-delay=".2">The Leadership Team</h2>
-            <p class="animated" data-animate="fadeInUp" data-delay=".3">The ICO Crypto Team combines a passion for
-              esports, industry experise &amp; proven record in finance, development, marketing &amp; licensing</p>
+          <div class="row justify-content-center text-center">
+            <div class="col-lg-6">
+              <div class="section-head section-head-s2">
+                <h2 class="title title-xl animated" data-animate="fadeInUp" data-delay="0.1" title="The Leadership Team">
+                  Our Team
+                </h2>
+                <p class="animated" data-animate="fadeInUp" data-delay="0.2">
+                  The DiffEx team are enthusastic developers with a passion for crytpo and plan on bringing huge improvements to the market.
+                </p>
+              </div>
+            </div>
           </div>
-          <!-- Section Head @s -->
-          <!-- Block @s -->
+
           <div class="nk-block nk-block-team-list team-list">
             <div class="row justify-content-center">
+
+              <!-- Chris Overview -->
               <div class="col-lg-3 col-mb-6">
                 <div class="team team-s5 animated" data-animate="fadeInUp" data-delay=".4">
                   <div class="team-photo team-photo-s1">
                     <img src="images/CF.jpg" alt="team" class="no-bdrs">
                     <a href="#team-popup-1" class="team-show content-popup" data-overlay="bg-grad-alt"></a>
                   </div>
-                  <h5 class="team-name title title-md">Waylon <br>Dalton</h5>
-                  <span class="team-position">CEO &amp; Lead Blockchain</span>
+                  
+                  <h5 class="team-name title title-md">Chris <br>Faxon</h5>
+                  <span class="team-position">Partner &amp; Developer</span>
+                  
                   <ul class="team-social team-social-vr team-social-s2">
-                    <li><a href="#"><em class="fab fa-facebook-f"></em></a></li>
-                    <li><a href="#"><em class="fab fa-twitter"></em></a></li>
-                    <li><a href="#"><em class="fab fa-linkedin-in"></em></a></li>
+                    <li><a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/christopher-faxon-93758a1a9/"><em class="fab fa-linkedin-in"></em></a></li>
                   </ul>
                 </div>
-                <!-- Start .team-profile  -->
+                
+                <!-- Profile Modal  -->
                 <div id="team-popup-1" class="team-popup mfp-hide">
                   <a title="Close" class="mfp-close">×</a>
                   <div class="row align-items-start">
@@ -500,11 +509,10 @@
                     </div><!-- .col  -->
                     <div class="col-md-6">
                       <div class="team-popup-info pl-md-3">
-                        <h3 class="team-name title title-lg pt-4">Waylon Dalton</h3>
-                        <p class="team-position mb-1">CEO &amp; Lead Blockchain </p>
+                        <h3 class="team-name title title-lg pt-4">Chris Faxon</h3>
+                        <p class="team-position mb-1">Partner &amp; Developer</p>
                         <ul class="team-social team-social-s2 mb-4">
-                          <li><a href="#"><em class="fab fa-facebook-f"></em></a></li>
-                          <li><a href="#"><em class="fab fa-linkedin-in"></em></a></li>
+                          <li><a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/christopher-faxon-93758a1a9/"><em class="fab fa-linkedin-in"></em></a></li>
                         </ul>
                         <p>He is a great man to work Lorem ipsum dolor sit amet, consec tetur adipis icing elit.
                           Simi lique, autem. </p>
@@ -528,40 +536,45 @@
                       </div>
                     </div><!-- .col  -->
                   </div><!-- .row  -->
-                </div><!-- .team-profile  -->
-              </div><!-- .col -->
+                </div>
+              </div>
+
+              <!-- Nick Overview -->
               <div class="col-lg-3 col-mb-6">
                 <div class="team team-s5 animated" data-animate="fadeInUp" data-delay=".5">
                   <div class="team-photo team-photo-s1">
-                    <img src="images/CF.jpg" alt="team" class="no-bdrs">
+                    <img src="images/NA.jpg" alt="team" class="no-bdrs">
                     <a href="#team-popup-2" class="team-show content-popup" data-overlay="bg-grad-alt"></a>
                   </div>
-                  <h5 class="team-name title title-md">Jonathan <br>Rios</h5>
-                  <span class="team-position">CTO &amp; Software Engineer</span>
+                  <h5 class="team-name title title-md">Nick <br>Arnold</h5>
+                  <span class="team-position">Partner &amp; Developer</span>
                   <ul class="team-social team-social-vr team-social-s2">
-                    <li><a href="#"><em class="fab fa-linkedin-in"></em></a></li>
+                    <li><a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/nicholas-a-384a19167/"><em class="fab fa-linkedin-in"></em></a></li>
                   </ul>
                 </div>
-                <!-- Start .team-popup  -->
+
+                <!-- Profile Modal  -->
                 <div id="team-popup-2" class="team-popup mfp-hide">
                   <a title="Close" class="mfp-close">×</a>
                   <div class="row align-items-start">
                     <div class="col-md-6">
                       <div class="team-photo">
-                        <img src="images/CF.jpg" alt="team">
+                        <img src="images/NA.jpg" alt="team">
                       </div>
                     </div><!-- .col  -->
                     <div class="col-md-6">
                       <div class="team-popup-info pl-md-3">
-                        <h3 class="team-name title title-lg pt-4">Jonathan Rios</h3>
-                        <p class="team-position mb-1">CTO &amp; Software Engineer</p>
+                        <h3 class="team-name title title-lg pt-4">Nick Arnold</h3>
+                        <p class="team-position mb-1">Partner &amp; Developer</p>
                         <ul class="team-social team-social-s2 mb-4">
-                          <li><a href="#"><em class="fab fa-linkedin-in"></em></a></li>
+                          <li><a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/nicholas-a-384a19167/"><em class="fab fa-linkedin-in"></em></a></li>
                         </ul>
-                        <p>He is a great man to work Lorem ipsum dolor sit amet, consec tetur adipis icing elit.
-                          Simi lique, autem. </p>
-                        <p>Tenetur quos facere magnam volupt ates quas esse Sedrep ell endus mole stiae tates quas
-                          esse Sed repell endus molesti aela uda ntium quis quam iusto minima thanks.</p>
+                        <p>Hello, my name is Nick and I am currently a senior at Rensselear Polytechnic Institute stuidying computer science. I'm a very passionate user of crypto and I 
+                          hope to see it go miles. My goal is to expand the already expanding DeFi market with DiffEx and I hope you can follow me through that journey.
+                        </p>
+                        <p>
+                          I know a little bit of everything when it comes to crypto and tech in general. I am the co-founder of DiffEx and I hope to bring more people onto the team as we go on.
+                        </p>
                       </div>
                     </div><!-- .col  -->
                   </div><!-- .row  -->
@@ -1016,6 +1029,7 @@
 
   <script src="static/js/nio.bundle.min.js"></script>
   <script src="javascripts/scripts.js"></script>
+
   <!-- Start of LiveChat (www.livechatinc.com) code -->
   <script>
     window.__lc = window.__lc || {};
