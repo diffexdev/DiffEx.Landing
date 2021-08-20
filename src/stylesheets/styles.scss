@@ -216,11 +216,19 @@ hr::after {
 .clipboardButton {
   width: 64px;
   height: 64px;
-  background-color: white;
+  background-color: #13224f;
+  color: white;
+  border-top-right-radius: 25px;
+  border-bottom-right-radius: 25px;
   border: transparent;
+  outline: none;
 }
 
 .clipboardInput {
-  background-color: white;
+  color: white;
+  background-color: #13224f;
+  border-top-left-radius: 25px;
+  border-bottom-left-radius: 25px;
+  outline: none;
   border: transparent;
 }
