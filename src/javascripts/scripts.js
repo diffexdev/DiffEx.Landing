@@ -102,10 +102,11 @@ $('[id=buyNow]').on('click', () => {
 $('#ethInput').keyup(() => {
   const inputValue = $('#ethInput').val();
   let dffx = 0;
-  if (inputValue >= 1) dffx = inputValue * 975000;
-  else if (inputValue < 1 && inputValue >= 0.5) dffx = inputValue * 845000;
-  else if (inputValue < 0.25 && inputValue >= 0.1) dffx = inputValue * 632500;
-  else if (inputValue < 0.1 && inputValue >= 0.02) dffx = inputValue * 650000;
+  if (inputValue >= 1) dffx = inputValue * 1012500;
+  else if (inputValue < 1 && inputValue >= 0.5) dffx = inputValue * 877500;
+  else if (inputValue < 0.5 && inputValue >= 0.25) dffx = inputValue * 810000;
+  else if (inputValue < 0.25 && inputValue >= 0.1) dffx = inputValue * 776250;
+  else if (inputValue < 0.1 && inputValue >= 0.02) dffx = inputValue * 675000;
   else dffx = 0;
 
   $('#dffxToReceive').html(`${dffx.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',')} DFFX`);
