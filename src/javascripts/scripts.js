@@ -87,17 +87,15 @@ $(() => {
 });
 
 // Location Detection
-// Get current token sale data
-// function secComplianceCheck() {
-//   $.getJSON('https://api.db-ip.com/v2/pb6531b8e3bd6e5da1ac7779bc9147d873eddec5/self', (data) => {
-//     if (data.countryCode === 'US') $('#sec-compliance-button')[0].click();
-//     else $('#how-to-buy-button')[0].click();
-//   });
-// }
+function secComplianceCheck() {
+  $.getJSON('https://api.db-ip.com/v2/pb6531b8e3bd6e5da1ac7779bc9147d873eddec5/self', (data) => {
+    if (data.countryCode === 'US') $('#sec-compliance-button')[0].click();
+    else $('#how-to-buy-button')[0].click();
+  });
+}
 
 $('[id=buyNow]').on('click', () => {
-  // secComplianceCheck();
-  $('#how-to-buy-button')[0].click();
+  secComplianceCheck();
 });
 
 $('#ethInput').keyup(() => {

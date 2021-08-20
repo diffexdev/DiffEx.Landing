@@ -1,19 +1,11 @@
-/*
-=====
-RESET STYLES
-=====
-*/
-
 .field__input {
   --uiFieldPlaceholderColor: var(--fieldPlaceholderColor, white);
 
   background-color: transparent;
   border-radius: 0;
   border: none;
-
   -webkit-appearance: none;
   -moz-appearance: none;
-
   font-family: inherit;
   font-size: inherit;
 }
@@ -26,20 +18,15 @@ RESET STYLES
   color: var(--uiFieldPlaceholderColor);
 }
 
-/*
-  =====
-  CORE STYLES
-  =====
-  */
-
 .field {
   --uiFieldBorderWidth: var(--fieldBorderWidth, 2px);
   --uiFieldPaddingRight: var(--fieldPaddingRight, 1rem);
   --uiFieldPaddingLeft: var(--fieldPaddingLeft, 1rem);
-  --uiFieldBorderColorActive: var(
-    --fieldBorderColorActive,
-    rgba(22, 22, 22, 1)
-  );
+  --uiFieldBorderColorActive:
+    var(
+      --fieldBorderColorActive,
+      rgba(22, 22, 22, 1)
+    );
 
   display: var(--fieldDisplay, inline-flex);
   position: relative;
@@ -50,9 +37,11 @@ RESET STYLES
   box-sizing: border-box;
   width: var(--fieldWidth, 100%);
   height: var(--fieldHeight, 3rem);
-  padding: var(--fieldPaddingTop, 1.25rem) var(--uiFieldPaddingRight)
+  padding:
+    var(--fieldPaddingTop, 1.25rem) var(--uiFieldPaddingRight)
     var(--fieldPaddingBottom, 0.5rem) var(--uiFieldPaddingLeft);
-  border-bottom: var(--uiFieldBorderWidth) solid
+  border-bottom:
+    var(--uiFieldBorderWidth) solid
     var(--fieldBorderColor, rgba(0, 0, 0, 0.25));
 }
 
@@ -84,7 +73,6 @@ RESET STYLES
   box-sizing: border-box;
   pointer-events: none;
   cursor: text;
-
   position: absolute;
   top: 0;
   right: 0;
@@ -98,7 +86,6 @@ RESET STYLES
   width: 100%;
   height: 0;
   opacity: 0;
-
   position: absolute;
   bottom: 0;
   left: 0;
@@ -112,12 +99,12 @@ RESET STYLES
   position: absolute;
   left: var(--uiFieldPaddingLeft);
   top: calc(50% - 0.5em);
-
   line-height: 1;
   font-size: var(--fieldHintFontSize, inherit);
-
-  transition: top 0.2s cubic-bezier(0.9, -0.15, 0.1, 1.15),
-    opacity 0.2s ease-out, font-size 0.2s ease-out;
+  transition:
+    top 0.2s cubic-bezier(0.9, -0.15, 0.1, 1.15),
+    opacity 0.2s ease-out,
+    font-size 0.2s ease-out;
   will-change: bottom, opacity, font-size;
 }
 
@@ -128,19 +115,11 @@ RESET STYLES
   top: var(--fieldHintTopHover, 0.25rem);
 }
 
-/* 
-  effect 1
-  */
-
 .field_v1 .field__label-wrap::after {
   border-bottom: var(--uiFieldBorderWidth) solid var(--uiFieldBorderColorActive);
   transition: opacity 0.2s ease-out;
   will-change: opacity;
 }
-
-/* 
-  effect 2
-  */
 
 .field_v2 .field__label-wrap {
   overflow: hidden;
@@ -158,10 +137,6 @@ RESET STYLES
   transition-delay: 0;
 }
 
-/*
-  effect 3
-  */
-
 .field_v3 .field__label-wrap::after {
   border: var(--uiFieldBorderWidth) solid var(--uiFieldBorderColorActive);
   will-change: opacity, height;
@@ -171,12 +146,6 @@ RESET STYLES
 .field_v3 .field__input:focus ~ .field__label-wrap::after {
   height: 100%;
 }
-
-/*
-  =====
-  LEVEL 4. SETTINGS
-  =====
-  */
 
 .field {
   --fieldBorderColor: #d1c4e9;
