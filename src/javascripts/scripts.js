@@ -1,4 +1,5 @@
 import $ from 'jquery';
+import Clipboard from 'clipboard';
 
 require('jquery-validation');
 
@@ -65,4 +66,53 @@ $('#contactForm').validate({
     $('#notSubmittedText').hide();
     $('#submittedText').show();
   },
+});
+
+// Get current token sale data
+$(() => {
+  $.ajax({
+    type: 'GET',
+    url: 'https://api.diffex.io/api/v1/ICO',
+    dataType: 'json',
+    success(result) {
+      const rounded = result.toFixed(4);
+      const numberRaised = `Raised so far: <span>${rounded} ETH</span>`;
+      $('#icoRaised').html(numberRaised);
+      $('#raisedProgress').html(`<div class='progress-percent bg-grad' style="width: ${(result / 30) * 100}%"></div>`);
+    },
+    error() {
+      // Do nothing
+    },
+  });
+});
+
+// Location Detection
+function secComplianceCheck() {
+  $.getJSON('https://api.db-ip.com/v2/pb6531b8e3bd6e5da1ac7779bc9147d873eddec5/self', (data) => {
+    if (data.countryCode === 'US') $('#sec-compliance-button')[0].click();
+    else $('#how-to-buy-button')[0].click();
+  });
+}
+
+$('[id=buyNow]').on('click', () => {
+  secComplianceCheck();
+});
+
+$('#ethInput').keyup(() => {
+  const inputValue = $('#ethInput').val();
+  let dffx = 0;
+  if (inputValue >= 1) dffx = inputValue * 1012500;
+  else if (inputValue < 1 && inputValue >= 0.5) dffx = inputValue * 877500;
+  else if (inputValue < 0.5 && inputValue >= 0.25) dffx = inputValue * 810000;
+  else if (inputValue < 0.25 && inputValue >= 0.1) dffx = inputValue * 776250;
+  else if (inputValue < 0.1 && inputValue >= 0.02) dffx = inputValue * 675000;
+  else dffx = 0;
+
+  $('#dffxToReceive').html(`${dffx.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',')} DFFX`);
+});
+
+// Clipboard JS
+$(() => {
+  // eslint-disable-next-line no-new
+  new Clipboard('.clipboardButton');
 });

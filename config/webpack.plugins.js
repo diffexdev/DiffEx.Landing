@@ -25,7 +25,7 @@ const staticCopyJs = new TransferWebpackPlugin([{
 }], path.join(config.root, config.paths.src))
 
 const staticCopyCss = new TransferWebpackPlugin([{
-  from: 'static/css/required',
+  from: 'static/css',
   to: '../dist/static/css'
 }], path.join(config.root, config.paths.src))
 
