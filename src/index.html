@@ -1032,6 +1032,7 @@
               <li><a id="footer_link" onclick="displayPreferenceModal()" type="button">
                   Cookie Preferences
                 </a></li>
+                <li><a href="https://icons8.com/icon/cTgJnRhpif49/copy">Copy icon by Icons8</a></li>
             </ul>
           </div>
         </div>
@@ -1057,22 +1058,26 @@
               <h5 style="color: white;">1. Through DiffEx ICO Presale Smart Contract</h5>
               <p>To buy DFFX through the smart contract, simply send the desired amount of ETH to the contract address
                 below and you will automatically be sent DFFX according to the exchange rate</p>
-              <p style="color: rgb(255, 0, 0);">
-                NOTE: Only use this method if you are doing it from a wallet you control the keys to. Do not attempt to
-                buy DFFX this way from an exchange or Coinbase, as it is unlikely you will be able to access your DFFX.
+              <p style="color: rgb(109, 19, 19);">
+                Do not attempt to buy DFFX this way from an exchange/Coinbase.
               </p>
 
               <!-- Target -->
-              <div class="col-lg-12" style="display: flex; margin-bottom: 2em;">
-                <input class="clipboardInput" readonly="readonly" style="flex: 1;" id="contractAddress"
+              <div class="col-lg-12" style="display: flex; margin-bottom: 2em; ">
+                <input class="clipboardInput" readonly="readonly" style="flex: 1; padding-left: 1.5em;" id="contractAddress"
                   value="0x979b4bBC1049c21FBB6b857cDE5c8B315c264012">
 
                 <!-- Trigger -->
-                <button class="clipboardButton" style="flex: 0.1;" data-clipboard-target="#contractAddress">
-                  <img src="https://img.icons8.com/pastel-glyph/64/000000/copy--v1.png" />
+                <button class="clipboardButton" style="flex: 0.1; padding-right: 1.5em;" data-clipboard-target="#contractAddress">
+                  <img src="https://img.icons8.com/pastel-glyph/64/ffffff/copy--v1.png" />
                 </button>
               </div>
 
+              <div class="col-lg-12" style="display: flex; justify-content: center; align-items: center; margin-bottom: 1em;">
+                <p style="color: rgb(109, 19, 19);">
+                  <strong> NOTE:</strong> You may have to adjust the gas limit when sending to the presale contract. Default gas is 21,000. <strong>Recommended gas is 71,000</strong>.
+                </p>
+              </div>
               <div class="col-lg-12" style="display: flex; justify-content: center; align-items: center;">
                 <p>Checkout the contract source <a style="color: #0000EE;" rel="noopener nofollow" target="_blank"
                     href="https://etherscan.io/address/0x979b4bbc1049c21fbb6b857cde5c8b315c264012#code">here!</a></p>
@@ -1085,21 +1090,19 @@
                 using the presale contract, email us at support@diffex.io with details of how much you'd like to buy and
                 with which currency. Bonuses will still apply!</p>
 
-              <div class="col-lg-12" style="display: flex; justify-content: center; align-items: center;">
-                <img src="./images/contract_qr_code.png" />
-              </div>
+              
             </div>
           </div>
 
           <hr style="box-shadow: 0 0 0 0 white; border: 1px solid white;" />
 
           <div>
-            <h3 class="title title-md" style="color: white;">Calculate how much DFFX you want!</h3>
+            <h3 class="title title-md" style="color: white;">DFFX Exchange Rate Calculator</h3>
 
             <div class="row">
               <div class="col-lg-5" style="display: flex; justify-content: center; align-items: center;">
                 <label class="field field_v3">
-                  <input class="field__input" placeholder="e.g. 0.002" style="color: white;" type="number"
+                  <input class="field__input" placeholder="Minimum 0.02" style="color: white;" type="number"
                     id="ethInput">
                   <span class="field__label-wrap">
                     <span class="field__label">ETH To Transfer</span>
