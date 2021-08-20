@@ -2,6 +2,42 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.1.1](https://github.com/Diff-Ex/DiffEx.Landing/compare/v0.1.0...v0.1.1) (2021-08-20)
+
+
+### Features
+
+* added all the legal stuff ([54c0138](https://github.com/Diff-Ex/DiffEx.Landing/commit/54c013834798275af3f734d465c6ce1544e8a7c4))
+* added chat widget ([18c79d6](https://github.com/Diff-Ex/DiffEx.Landing/commit/18c79d6f5331291e7ddc4d4c3d20ca5f859a1f33))
+* added clipboardjs ([37d5f62](https://github.com/Diff-Ex/DiffEx.Landing/commit/37d5f620b134bff2f491923f4a54c98c86d16046))
+* added contract and QR code ([1df6175](https://github.com/Diff-Ex/DiffEx.Landing/commit/1df617547576cdf5bb9c5c27490d5a7bd2c10b0e))
+* added mailchimp script ([742e98b](https://github.com/Diff-Ex/DiffEx.Landing/commit/742e98b2467a1d08ddead762aae05b7165cfc15f))
+* added new menu items and rounded "raised thus far" ([0ea1b17](https://github.com/Diff-Ex/DiffEx.Landing/commit/0ea1b176586f28c5fcd63f8f77f067d56d1b0568))
+* added SEC compliance check ([6ab450a](https://github.com/Diff-Ex/DiffEx.Landing/commit/6ab450a283bd56e65c3e7985105d045bb27c7689))
+* added token chart and team ([8a8d90a](https://github.com/Diff-Ex/DiffEx.Landing/commit/8a8d90aa4cb331b64c9f89c7599e6db6ea1eac78))
+* dffx ([ea13526](https://github.com/Diff-Ex/DiffEx.Landing/commit/ea135269b5dde5a399a89ab760113c43e932e324))
+* new buy now box ([e88059d](https://github.com/Diff-Ex/DiffEx.Landing/commit/e88059da2bfe374fe923f7aee32a766a484b779d))
+* new modal and changes ([fdbcf21](https://github.com/Diff-Ex/DiffEx.Landing/commit/fdbcf213e77730e752b3b68ae8adc6b32ffa3d16))
+* updated profile section added me ([8d9818e](https://github.com/Diff-Ex/DiffEx.Landing/commit/8d9818eb08f153fd8acd6d3918ab7a851992bd4f))
+* updated token info ([f2d2a74](https://github.com/Diff-Ex/DiffEx.Landing/commit/f2d2a74d8b044f3cddcb34241afe377133a381a2))
+
+
+### Bug Fixes
+
+* added compilable version of chris ([2bffd2f](https://github.com/Diff-Ex/DiffEx.Landing/commit/2bffd2fafe29a001b6e1e418ad09cfa851b600c8))
+* added stylelint-disable to required class ([b10f5d5](https://github.com/Diff-Ex/DiffEx.Landing/commit/b10f5d54be7c8bfe3a76ba12424860a5b2962733))
+* changed all references of DFX to DFFX ([382a53c](https://github.com/Diff-Ex/DiffEx.Landing/commit/382a53c0c2476f01cdf68d7b2cd497bb3a848848))
+* double showing accordion under DFFX Token Presale FAQ ([9dcd97a](https://github.com/Diff-Ex/DiffEx.Landing/commit/9dcd97a33ff934af6228e1c979dbee02326c4852))
+* fixed link ([21f5901](https://github.com/Diff-Ex/DiffEx.Landing/commit/21f5901a35dad772a8dff0fbb21383431728f245))
+* mobile buy token modal ([3ad4ff8](https://github.com/Diff-Ex/DiffEx.Landing/commit/3ad4ff800571ac4bba417c74d14c6178ca5fb28e))
+* new whitepaper and updated token prices ([bdc6bba](https://github.com/Diff-Ex/DiffEx.Landing/commit/bdc6bbaf2aaf9c787d5e941b60c9a8e15466b687))
+* number updates ([d892154](https://github.com/Diff-Ex/DiffEx.Landing/commit/d892154326babd1f3f56c56cc90d76150ad12122))
+* presale end timer fix ([09fecd6](https://github.com/Diff-Ex/DiffEx.Landing/commit/09fecd6db1dd9c4a572a83bfe04f95f4d3850434))
+* removed required CSS and CSS purging due to issues ([6c7e5c7](https://github.com/Diff-Ex/DiffEx.Landing/commit/6c7e5c750ac92728698db4df83feb38735c6f877))
+* section fixes ([27bc579](https://github.com/Diff-Ex/DiffEx.Landing/commit/27bc57936ca74a3250a39173fdfefadf39c90720))
+* table styles ([534c4e9](https://github.com/Diff-Ex/DiffEx.Landing/commit/534c4e9948ec0877b202c56aaa30af5f4f6eb366))
+* white paper button stutter due to having animation class ([ba0c915](https://github.com/Diff-Ex/DiffEx.Landing/commit/ba0c915b969819ea8272a90fa400f17b0a034fd8))
+
 ## [0.1.0](https://github.com/Diff-Ex/DiffEx.Landing/compare/v0.0.15...v0.1.0) (2021-08-15)
 
 

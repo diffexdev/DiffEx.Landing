@@ -1,7 +1,7 @@
 {
   "name": "diffex",
   "description": "Diffex, ERC20 token options trading platform",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "homepage": "https://www.diffex.io",
   "private": true,
   "keywords": [
