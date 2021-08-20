@@ -1060,7 +1060,16 @@
                 NOTE: Only use this method if you are doing it from a wallet you control the keys to. Do not attempt to
                 buy DFFX this way from an exchange or Coinbase, as it is unlikely you will be able to access your DFFX.
               </p>
-              <p>CONTRACT ADDRESS HERE</p>
+
+              <!-- Target -->
+              <div class="col-lg-12" style="display: flex; margin-bottom: 2em;">
+                <input class="clipboardInput" readonly="readonly" style="flex: 1;" id="contractAddress" value="https://github.com/zenorocha/clipboard.js.git">
+
+                <!-- Trigger -->
+                <button class="clipboardButton" style="flex: 0.1;" data-clipboard-target="#contractAddress">
+                  <img src="https://img.icons8.com/pastel-glyph/64/000000/copy--v1.png"/>
+                </button>
+              </div>
             </div>
 
             <div class="col-lg-6">
@@ -1079,7 +1088,8 @@
             <div class="row">
               <div class="col-lg-5" style="display: flex; justify-content: center; align-items: center;">
                 <label class="field field_v3">
-                  <input class="field__input" placeholder="e.g. 0.002" style="color: white;" type="number" id="ethInput">
+                  <input class="field__input" placeholder="e.g. 0.002" style="color: white;" type="number"
+                    id="ethInput">
                   <span class="field__label-wrap">
                     <span class="field__label">ETH To Transfer</span>
                   </span>

@@ -1,4 +1,5 @@
 import $ from 'jquery';
+import Clipboard from 'clipboard';
 
 require('jquery-validation');
 
@@ -110,4 +111,10 @@ $('#ethInput').keyup(() => {
   else dffx = 0;
 
   $('#dffxToReceive').html(`${dffx.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',')} DFFX`);
+});
+
+// Clipboard JS
+$(() => {
+  // eslint-disable-next-line no-new
+  new Clipboard('.clipboardButton');
 });
