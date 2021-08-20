@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.1.2](https://github.com/Diff-Ex/DiffEx.Landing/compare/v0.1.1...v0.1.2) (2021-08-20)
+
+
+### Features
+
+* changed purchase modal ([984223c](https://github.com/Diff-Ex/DiffEx.Landing/commit/984223c7b083add10b3ddfccc4aa9af42deb3d0a))
+
 ### [0.1.1](https://github.com/Diff-Ex/DiffEx.Landing/compare/v0.1.0...v0.1.1) (2021-08-20)
 
 
