@@ -108,5 +108,5 @@ $('#ethInput').keyup(() => {
   else if (inputValue < 0.1 && inputValue >= 0.02) dffx = inputValue * 650000;
   else dffx = 0;
 
-  $('#dffxToReceive').html(`${dffx} DFFX`);
+  $('#dffxToReceive').html(`${dffx.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',')} DFFX`);
 });
