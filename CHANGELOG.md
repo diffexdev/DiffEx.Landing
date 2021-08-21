@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.1.3](https://github.com/Diff-Ex/DiffEx.Landing/compare/v0.1.2...v0.1.3) (2021-08-21)
+
+
+### Features
+
+* new dashboard screenshot images ([f91c84e](https://github.com/Diff-Ex/DiffEx.Landing/commit/f91c84ecedb5240f5afa7c76e388b5b469e0d1a5))
+
 ### [0.1.2](https://github.com/Diff-Ex/DiffEx.Landing/compare/v0.1.1...v0.1.2) (2021-08-20)
 
 
