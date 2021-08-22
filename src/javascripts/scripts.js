@@ -76,7 +76,7 @@ $(() => {
     dataType: 'json',
     success(result) {
       const rounded = result.toFixed(4);
-      const numberRaised = `Raised so far: <span>${rounded} ETH</span>`;
+      const numberRaised = `Raised so far: <span>${rounded} ETH*</span>`;
       $('#icoRaised').html(numberRaised);
       $('#raisedProgress').html(`<div class='progress-percent bg-grad' style="width: ${(result / 30) * 100}%"></div>`);
     },
