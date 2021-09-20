@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.1.5](https://github.com/Diff-Ex/DiffEx.Landing/compare/v0.1.4...v0.1.5) (2021-09-20)
+
+
+### Features
+
+* presale round 2 ([7a3f3f5](https://github.com/Diff-Ex/DiffEx.Landing/commit/7a3f3f548f9ce104c27ec5e9b0d483f40c11bc45))
+
 ### [0.1.4](https://github.com/Diff-Ex/DiffEx.Landing/compare/v0.1.3...v0.1.4) (2021-08-22)
 
 ### [0.1.3](https://github.com/Diff-Ex/DiffEx.Landing/compare/v0.1.2...v0.1.3) (2021-08-21)
