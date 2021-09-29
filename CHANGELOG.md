@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.1.6](https://github.com/Diff-Ex/DiffEx.Landing/compare/v0.1.5...v0.1.6) (2021-09-29)
+
+
+### Features
+
+* removed team section so we dont get killed by angry chinese ([97a9ff2](https://github.com/Diff-Ex/DiffEx.Landing/commit/97a9ff237e3e2f45f90171c022bc72204739df92))
+* removed token stuff ([1394463](https://github.com/Diff-Ex/DiffEx.Landing/commit/13944637e01e003a5ae88c2e2185a83c869ec757))
+
 ### [0.1.5](https://github.com/Diff-Ex/DiffEx.Landing/compare/v0.1.4...v0.1.5) (2021-09-20)
 
 
